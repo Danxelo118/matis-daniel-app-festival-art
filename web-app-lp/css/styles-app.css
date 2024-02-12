@@ -7,7 +7,6 @@
 }
 
 .navbar {
-  background-color: white;
   height: auto;
 }
 
@@ -25,8 +24,6 @@
 }
 
 footer {
-  background-color: var(--gris-pale);
-  color: white;
   font-size: small;
 }
 
@@ -65,4 +62,13 @@ main {
 }
 .btn:focus {
   background-color: var(--rouge);
+}
+
+.img-vedette {
+  height: 20vh;
+  object-fit: cover;
+}
+
+#programme-h {
+  object-position: 70%;
 }
