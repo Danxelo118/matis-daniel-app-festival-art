@@ -10,17 +10,21 @@
   height: auto;
 }
 
-.logo {
-  width: 10%;
-}
-
 .navbar-toggler {
   border: white;
 }
 
 .navbar-brand {
-  font-weight: 700;
-  font-family: var(--roboto);
+  font-weight: 900;
+  font-family: var(--bebas);
+}
+
+.logo {
+  object-fit: contain;
+}
+
+#avatar {
+  object-fit: contain;
 }
 
 footer {

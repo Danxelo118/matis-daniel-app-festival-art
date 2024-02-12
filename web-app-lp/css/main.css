@@ -12,7 +12,7 @@
 h1 {
   font-size: x-large;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Titre de section */
@@ -20,13 +20,14 @@ h2 {
   font-size: large;
   color: var(--gris-fonce);
   font-weight: 800;
+  font-family: var(--roboto);
 }
 
 /* Titre des oeuvres*/
 h3 {
   font-size: medium;
   color: var(--gris-fonce);
-  font-weight: 200;
+  font-weight: 400;
 }
 
 h4 {

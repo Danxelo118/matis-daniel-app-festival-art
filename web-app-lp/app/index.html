@@ -19,12 +19,12 @@
       rel="stylesheet"
     />
 
-    <link
-      href="../scss/custom_bootstrap.css"
-      rel="stylesheet"
-    />
+    <link href="../scss/custom_bootstrap.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/styles-app.css" />
@@ -32,100 +32,146 @@
     <meta name="robots" content="noindex" />
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <header class="m-4">
-      <nav class="navbar navbar-light sticky-top">
+    <header>
+      <nav class="navbar navbar-light sticky-top col-12">
         <div class="container-fluid">
-          <div class="container text-center">
-            
+          <div class="row justify-content-center">
+            <div class="col-8">
               <a class="navbar-brand" href="index.html">
-                <img class="logo" src="../assets/logo-transparent.png" />
-                Japan art media festival
+                <img class="logo col-2" src="../assets/logo-transparent.png" />
+
+                <h1 class="text-center">Japan art media festival</h1>
               </a>
+            </div>
 
-              <img class="col-1" id="avatar" src="../assets/avatar-23.webp">
+            <img class="col-2" id="avatar" src="../assets/avatar-23.webp" />
 
-                <button
-                  class="navbar-toggler col-2"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#mainNav"
-                  aria-controls="mainNav"
-                  aria-expanded="false"
-                  aria-label="Affichage/masquage de la navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+            <button
+              class="navbar-toggler col-2"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Affichage/masquage de la navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div id="mainNav" class="collapse navbar-collapse">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a href="index.html" class="nav-link">Acceuil</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">Programmation</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">Présentations des artistes</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="#" class="nav-link">Amis sur carte interactive</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div id="mainNav" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link">Acceuil</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Programmation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Présentations des artistes</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Amis sur carte interactive</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <main >
+    <main>
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text"><i class="bi bi-search"></i></span>
             </div>
-            <input class="form-control search-bar" type="text" placeholder="Rechercher une oeuvre, un artiste..." aria-label="default input example">
+            <input
+              class="form-control search-bar"
+              type="text"
+              placeholder="Rechercher une oeuvre, un artiste..."
+              aria-label="default input example"
+            />
           </div>
-        <div class="row">
-          <div class="filters">
-            <ul class="list-unstyled d-flex">
-              <li class="m-1">
-                <button type="button" class="btn btn-outline-danger">Animation</button>
-              </li>
-              <li class="m-1">
-                <button type="button" class="btn btn-outline-danger">Reportage</button>
-              </li>
-              <li class="m-1">
-                <button type="button" class="btn btn-outline-danger">Dessin</button>
-              </li>
-            </ul>
+          <div class="row">
+            <div class="filters">
+              <ul class="list-unstyled d-flex">
+                <li class="m-1">
+                  <button type="button" class="btn btn-outline-danger">
+                    Animation
+                  </button>
+                </li>
+                <li class="m-1">
+                  <button type="button" class="btn btn-outline-danger">
+                    Reportage
+                  </button>
+                </li>
+                <li class="m-1">
+                  <button type="button" class="btn btn-outline-danger">
+                    Dessin
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="row justify-content-around">
+
+          <div class="row justify-content-center g-1">
             <h2>En vedette</h2>
             <div class="col-4">
               <a href="#" class="card">
-                <img src="../assets/artworks/programme-g.png" class="card-img-top img-vedette">
-                <div class="card-body">
+                <img
+                  src="../assets/artworks/programme-g.png"
+                  class="card-img-top img-vedette"
+                />
+                <div class="card-body p-1">
                   <h3>Programme G</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <h4>
+                    Par: Yanis Belaid, Eliott Benard, Nicolas Mayeur, Etienne
+                    Moulin, Hadrien Pinot
+                  </h4>
+                  <div class="row">
+                    <i class="bi bi-clock"></i>
+                    <h4>13:45</h4>
+                    <i class="bi bi-calendar-event text-end"></i>
+                    <h4 class="text-end">4 septembre</h4>
+                  </div>
                 </div>
               </a>
             </div>
             <div class="col-4">
               <a href="#" class="card">
-                <img src="../assets/artworks/programme-h.png" class="card-img-top img-vedette" id="programme-h">
-                <div class="card-body">
+                <img
+                  src="../assets/artworks/programme-h.png"
+                  class="card-img-top img-vedette"
+                  id="programme-h"
+                />
+                <div class="card-body p-1">
                   <h3>Programme H</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <h4>Par : Kobayashi Yosuke</h4>
+                  <div class="row">
+                    <i class="bi bi-clock"></i>
+                    <h4>12:20</h4>
+                    <i class="bi bi-calendar-event text-end"></i>
+                    <h4 class="text-end">9 septembre</h4>
+                  </div>
                 </div>
               </a>
             </div>
             <div class="col-4">
               <a href="#" class="card">
-                <img src="../assets/artworks/manben-neo.png" class="card-img-top img-vedette" id="manben">
-                <div class="card-body">
+                <img
+                  src="../assets/artworks/manben-neo.png"
+                  class="card-img-top img-vedette"
+                  id="manben"
+                />
+                <div class="card-body p-1">
                   <h3>Manben-Neo</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                  <h4>Par : Naoki Urasawa</h4>
+                  <div class="row">
+                    <i class="bi bi-clock"></i>
+                    <h4>14:30</h4>
+                    <i class="bi bi-calendar-event text-end"></i>
+                    <h4 class="text-end">11 septembre</h4>
+                  </div>
                 </div>
               </a>
             </div>
@@ -141,7 +187,8 @@
             <img class="logo-footer" src="../assets/tim-transparent.png" />
           </div>
           <div class="col-12 col-sm-8 order-1 mt-3">
-            Projet fictif réalisé dans le cadre du cours Optimisation Web 582 424MO. UI de l'app créer par Matis Labelle.
+            Projet fictif réalisé dans le cadre du cours Optimisation Web 582
+            424MO. UI de l'app créer par Matis Labelle.
           </div>
         </div>
       </div>
