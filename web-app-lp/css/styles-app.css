@@ -6,6 +6,10 @@
   --bebas: "Bebas Neue";
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .navbar {
   height: auto;
 }
@@ -75,4 +79,38 @@ main {
 
 #programme-h {
   object-position: 70%;
+}
+
+.yanis {
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  top: 5%;
+}
+
+.yani {
+  width: 50px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+}
+
+.card:hover {
+  top: -2%;
+  box-shadow: 0 0 10px var(--gris-pale);
+}
+
+#vedette {
+  width: 140%;
+}
+
+.vedettes {
+  max-width: 200px;
+}
+
+#bubble {
+  object-position: 0 30%;
 }
