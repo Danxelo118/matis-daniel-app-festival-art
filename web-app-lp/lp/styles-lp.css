@@ -4,6 +4,7 @@
     --gris-pale: #7c7a7a;
     --roboto: "roboto";
     --bebas: "Bebas Neue";
+    --noir: black;
   }
 
 .header {
@@ -34,8 +35,8 @@
     color: white;
     font-size: small;
     bottom: 0;
-    left: 0;
     width: 100%;
+    height: 100px;
   }
   
   .logo-footer {
@@ -90,3 +91,51 @@
     color: var(--rouge);
     border: 2px solid var(--rouge);
   }
+
+  .card-body {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65);
+    height: 300px;
+  }
+  .card-body h5 {
+    font-size: 1.25rem;
+    text-align: center;
+    background-color: var(--rouge);
+    color: var(--noir);
+  }
+
+  .card-body p.card-texte {
+    font-size: 0.875rem;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  h2, p{
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .section-testimonals .card {
+    height: 100%;
+  }
+
+  @media (min-width: 576px) {
+    .section-testimonials .card {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-testimonials .row-cols-lg-4 > * {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
