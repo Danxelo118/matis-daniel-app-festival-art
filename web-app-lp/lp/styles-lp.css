@@ -139,8 +139,8 @@
     font-size: 30px;
   }
 
-  p {
-    font-size: 15px;
+  .section-features p  {
+    font-size:1rem;
   }
 
   .section-testimonals .card {
@@ -148,10 +148,18 @@
     margin-bottom: 20px;
     margin-top: 20px;
   }
+.section-testimonals h7 {
+  font-weight: bold;
+    font-size: 30px;
+}
 
+.section-testimonals p {
+  font-size: 15px;
+}
 
 .personnes img {
   height: 20vh;
   object-fit: cover;
   object-position: 20%;
 }
+

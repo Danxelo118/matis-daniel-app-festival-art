@@ -242,12 +242,12 @@
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="question2">
                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2" aria-expanded="false" aria-controls="answer2">
-                              Question 1: What is Lorem Ipsum?
+                              Question 2: What is Lorem Ipsum?
                           </button>
                       </h2>
                       <div id="answer2" class="accordion-collapse collapse" aria-labelledby="question2" data-bs-parent="#faqAccordion">
                           <div class="accordion-body">
-                              Answer 1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                              Answer 2: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                       </div>
                     </div>
                   </div>
@@ -255,12 +255,12 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="question3">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer3" aria-expanded="false" aria-controls="answer3">
-                          Question 1: What is Lorem Ipsum?
+                          Question 3: What is Lorem Ipsum?
                       </button>
                   </h2>
                   <div id="answer3" class="accordion-collapse collapse" aria-labelledby="question3" data-bs-parent="#faqAccordion">
                       <div class="accordion-body">
-                          Answer 1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          Answer 3: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                   </div>
                 </div>
               </div>
@@ -268,32 +268,59 @@
               <div class="accordion-item">
                 <h2 class="accordion-header" id="question4">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer4" aria-expanded="false" aria-controls="answer4">
-                      Question 1: What is Lorem Ipsum?
+                      Question 4: What is Lorem Ipsum?
                   </button>
               </h2>
               <div id="answer4" class="accordion-collapse collapse" aria-labelledby="question4" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                      Answer 1: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                      Answer 4: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
               </div>
             </div>
           </div>
-                    </section>
+                </section>
 
-                    <section id="Infolettre" class="py-5">
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-md-6 offset-md-6 text-center text-md-start">
-                            <img src="../assets/infolettre/crowd.avif"/>
-                            <h2>Infolettre</h2>
-                            <p>Abonnez-vous à notre infolettre pour recevoir des nouvelles sur les mises-à-jour et nouvelles fonctionnalités de l’appli, en plus de recevoir en primeur les détails des prochaines éditions du festival.</p>
-                            <button class="btn btn-lg btn-primary">Je m'abonne</button>
-                          </div>
-                        </div>
-                      </div>
-                    </section>
-        </div>
+
+
+<div class="modal fade" id="infolettreModal" tabindex="-1" aria-labelledby="infolettreModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infolettreModalLabel">Restez informé !</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+            <input type="email" class="form-control" placeholder="Votre adresse courriel">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">M'inscrire</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<section id="Infolettre" class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-6 text-center text-md-start">
+        <h2>Infolettre</h2>
+        <p>Abonnez-vous à notre infolettre pour recevoir des nouvelles sur les mises-à-jour et nouvelles fonctionnalités de l’appli, en plus de recevoir en primeur les détails des prochaines éditions du festival.</p>
+        <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#infolettreModal">Je m'abonne</button>
+      </div>
     </div>
+  </div>
+</section>
+
+
+
+
+
 
     <footer class="text-center pt-4 pb-4 mt-4">
         <div class="container">
@@ -325,6 +352,7 @@
     ></script>
     <script src="js/main.js"></script>
 
+    
 
 </body>
 </html>
