@@ -153,6 +153,11 @@
     font-size: 30px;
 }
 
+.section-testimonals h8 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
 .section-testimonals p {
   font-size: 15px;
 }
