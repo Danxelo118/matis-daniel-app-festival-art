@@ -40,7 +40,7 @@
     font-size: small;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 100%;
   }
   
   .logo-footer {
@@ -168,3 +168,19 @@
   object-position: 20%;
 }
 
+#Infolettre p {
+  font-size:1rem;
+  color:aliceblue;
+}
+#Infolettre h2 {
+  color:aliceblue;
+}
+#Infolettre {
+  background-image: url("https://images.unsplash.com/photo-1553526089-949e202de655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  object-fit: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
