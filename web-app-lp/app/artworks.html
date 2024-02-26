@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="../scss/custom_bootstrap.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/styles-app.css" />
+
+    <meta name="robots" content="noindex" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar navbar-art navbar-light sticky-top">
+        <div class="container-fluid">
+          <div class="row justify-content-between">
+            <div class="col-6">
+              <a class="col-12" href="index.html">
+                <i class="bi bi-arrow-left"></i>
+              </a>
+            </div>
+
+            <div class="col-6 coeur">
+              <i class="bi bi-heart" id="heart"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <img class="hero-art" src="../assets/artworks/programme D.png" />
+      </div>
+      <div class="content bg-white p-3">
+        <h1>Programme D</h1>
+        <i class="bi bi-geo-alt icon-art">Miraikan 7F Innovation Hall</i>
+        <i class="bi bi-calendar-event icon-art"> 5 Septembre</i>
+        <i class="bi bi-clock col-1 icon-art"> 13h</i>
+        <div class="card m-4">
+          <img
+            src="../assets/artists/kobayashi.jpg"
+            class="card-img-top img-artist"
+          />
+          <div class="card-body">
+            <h2>Nonowe Akihito</h2>
+            <p>
+              Nonowe Akihito est un directeur de film japonais. Il travail
+              beaucoup avec le dessin, l'animation 2D et 3D.
+            </p>
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-artist"
+            >
+              En savoir plus
+            </button>
+          </div>
+        </div>
+        <h2>Description de l'oeuvre</h2>
+        <p>
+          Les faibles battent ceux qui sont plus faibles, et les encore plus
+          faibles battent ceux qui sont encore plus faibles. Un homme refuse
+          d'accepter le cycle vicieux du monde et décide de briser la chaîne. Le
+          monde apocalyptique et sombre prend une atmosphère mythique vers la
+          fin du film. Ce court métrage est composé d'environ 10 000 prises de
+          vue en accéléré, de divers matériaux et techniques, et d'une large
+          gamme de musique, comprenant des sons acoustiques et de la musique
+          basée sur le rythme.
+        </p>
+        <div class="accordion" id="reserverPlace">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="acco1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Réserver votre place
+              </button>
+            </h2>
+
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="acco1"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <form>
+                  <label for="email">Courriel </label>
+                  <br />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="abc@exemple.com"
+                  />
+                  <br />
+                  <br />
+                  <label for="prenom">Prénom </label>
+                  <br />
+                  <input type="text" name="prenom" placeholder="prénom" />
+                  <br />
+                  <br />
+                  <label for="nom">Nom </label>
+                  <br />
+                  <input type="text" name="nom" placeholder="nom" />
+                  <br />
+                  <br />
+                  <label for="date">Date de visite</label>
+                  <br />
+                  <input type="date" name="date" />
+                  <br />
+                  <br />
+                  <input
+                    class="btn btn-outline-danger"
+                    type="submit"
+                    value="Envoyer"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-artist" tabindex="-1">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Nonowe Akihito</h2>
+              <button
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Fermer la
+              fenêtre"
+              ></button>
+            </div>
+          <div class="modal-body">
+            Nonowe Akihito est un artiste japonais polyvalent, reconnu à la fois
+            en tant que directeur et auteur. Né pour l'art et imprégné de la
+            riche tradition artistique japonaise, Akihito a développé un style
+            distinctif qui mêle habilement des éléments traditionnels et
+            contemporains. En tant que directeur, Akihito est réputé pour sa
+            vision artistique unique et son approche novatrice de la mise en
+            scène. Ses œuvres captivent souvent par leur esthétique visuelle
+            saisissante et leur narration profonde. Il excelle dans la création
+            d'univers immersifs qui transportent le spectateur dans des mondes
+            fantastiques ou contemplatifs. Son utilisation habile de la lumière,
+            de la couleur et de la composition donne vie à des scènes d'une
+            beauté éthérée, évoquant souvent une ambiance onirique. En tant
+            qu'auteur, Akihito explore une variété de thèmes, souvent empreints
+            de mystère, de symbolisme et de réflexion philosophique. Ses écrits
+            sont souvent salués pour leur prose poétique et leur capacité à
+            susciter une introspection chez le lecteur. À travers ses œuvres
+            littéraires, il explore les profondeurs de l'âme humaine, les luttes
+            existentielles et les nuances de l'expérience humaine, offrant ainsi
+            une perspective unique sur le monde qui l'entoure. L'œuvre de Nonowe
+            Akihito transcende les frontières culturelles, captivant un public
+            international par sa créativité et sa profondeur émotionnelle. Son
+            héritage artistique est marqué par son engagement à repousser les
+            limites de l'expression artistique et à inspirer une réflexion plus
+            profonde sur la nature de l'art et de l'existence humaine.
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-3 p-3 text-center bg-light text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-4 order-2">
+            <img class="logo-footer" src="../assets/tim-transparent.png" />
+          </div>
+          <div class="col-12 col-sm-8 order-1 mt-3">
+            Projet fictif réalisé dans le cadre du cours Optimisation Web 582
+            424MO. UI de l'app créer par Matis Labelle.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

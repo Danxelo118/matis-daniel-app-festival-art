@@ -10,8 +10,12 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  font-size: 120%;
+}
+
 .navbar {
-  height: auto;
+  height: 10vh;
 }
 
 .navbar-toggler {
@@ -57,10 +61,6 @@ main {
   border: 2px solid var(--rouge);
 }
 
-.filters {
-  overflow: hidden;
-}
-
 .btn {
   border: 2px solid var(--rouge);
 }
@@ -104,7 +104,7 @@ main {
 }
 
 #vedette {
-  width: 140%;
+  overflow: hidden;
 }
 
 .vedettes {
@@ -113,4 +113,57 @@ main {
 
 #bubble {
   object-position: 0 30%;
+}
+
+.navbar-art {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+i {
+  font-size: x-large;
+  color: black;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-art {
+  height: 33vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.coeur {
+  position: absolute;
+  right: -38%;
+}
+
+.content {
+  border-radius: 50px;
+  position: relative;
+  top: -30px;
+}
+
+.icon-art {
+  font-size: small;
+}
+
+.img-artist {
+  height: 22vh;
+  object-fit: cover;
+  object-position: 0% 30%;
+}
+
+.bi-heart:hover {
+  color: #ff5d73;
+}
+
+.heart-clicked {
+  color: #ff5d73;
+}
+
+.swiper-slide {
+  width: auto;
+  margin: 0.5rem;
 }

@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Application</title>
+    <title>Japan media art festival App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,21 +38,13 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-light sticky-top col-12">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <div class="col-8">
-              <a class="navbar-brand" href="index.html">
-                <img class="logo col-2" src="../assets/logo-transparent.png" />
-
-                <h1 class="text-center">Japan art media festival</h1>
-              </a>
-            </div>
-
-            <img class="col-2" id="avatar" src="../assets/avatar-23.webp" />
-
-            <button
-              class="navbar-toggler col-2"
+      <div class="container-fluid"></div>
+        <nav class="navbar navbar-light sticky-top">
+          <div class="row justify-content-center p-1">
+            
+            <div class="col-2">
+              <button
+              class="navbar-toggler col-11 text-start"
               data-bs-toggle="collapse"
               data-bs-target="#mainNav"
               aria-controls="mainNav"
@@ -56,6 +53,20 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
+          </div>
+            
+          <div class="col-8">
+            <a class="navbar-brand text-center" href="index.html">
+              <div class="row">
+                <img class="logo col-2" src="../assets/logo-transparent.png" />
+                <h1 class="text-start col-10">Japan art media festival</h1>
+              </div>
+            </a>
+          </div>
+            
+            <div class="avatar col-2">
+              <img class="col-8" id="avatar" src="../assets/avatar-23.webp" />
+            </div>
 
             <div id="mainNav" class="collapse navbar-collapse">
               <ul class="navbar-nav">
@@ -74,8 +85,9 @@
               </ul>
             </div>
           </div>
-        </div>
+        
       </nav>
+    </div>
     </header>
 
     <main>
@@ -93,100 +105,204 @@
             />
           </div>
           <div class="row">
-            <div class="filters">
-              <ul class="list-unstyled d-flex">
-                <li class="m-1">
-                  <button type="button" class="btn btn-outline-danger">
-                    Animation
-                  </button>
-                </li>
-                <li class="m-1">
-                  <button type="button" class="btn btn-outline-danger">
-                    Reportage
-                  </button>
-                </li>
-                <li class="m-1">
-                  <button type="button" class="btn btn-outline-danger">
-                    Dessin
-                  </button>
-                </li>
-              </ul>
-            </div>
+            <section>
+              <div class="filters swiper swiper-filters">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <button type="button" class="btn btn-outline-danger">
+                      Toutes
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button type="button" class="btn btn-outline-danger">
+                      Concert
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button type="button" class="btn btn-outline-danger">
+                      AR/VR
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button type="button" class="btn btn-outline-danger">
+                      Installation intéractive
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button type="button" class="btn btn-outline-danger">
+                      Performance
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button type="button" class="btn btn-outline-danger">
+                      Projections
+                    </button>
+                  </div>
+                  <div class="swiper-slide">
+                    <button type="button" class="btn btn-outline-danger">
+                      AI/Machine-learning
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
 
           <div id="vedette" class="row justify-content-center g-1">
             <h2>En vedette</h2>
-            <div class="col-4">
-              <a href="#" class="card vedettes">
-                <img
-                  src="../assets/artworks/programme-g.png"
-                  class="card-img-top img-vedette"
-                />
-                <div class="card-body p-1">
-                  <h3>Programme G</h3>
-                  <h4>Par: Yanis Belaid</h4>
-                  <div class="row justify-content-start">
-                    <i class="bi bi-calendar-event text-end col-1"></i>
-                    <h4 class="col-4">3/9</h4>
-                    <i class="bi bi-clock col-1"></i>
-                    <h4 class="col-4">21h</h4>
-
-                    <img src="../assets/artists/yanis.jpg" class="col-1 yani" />
-                    <h5 class="col-11 text-end">En savoir plus -></h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-4">
-              <a href="#" class="card vedettes">
-                <img
-                  src="../assets/artworks/programme-h.png"
-                  class="card-img-top img-vedette"
-                  id="programme-h"
-                />
-                <div class="card-body p-1">
-                  <h3>Programme H</h3>
-                  <h4>Par : Kobayashi Yosuke</h4>
-                  <div class="row justify-content-start">
-                    <i class="bi bi-calendar-event text-end col-1"></i>
-                    <h4 class="col-4">7/9</h4>
-                    <i class="bi bi-clock col-1"></i>
-                    <h4 class="col-4">11h</h4>
+            <div class="swiper swiper-featured-artworks">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="artworks.html" class="card vedettes">
                     <img
-                      src="../assets/artists/kobayashi.jpg"
-                      class="col-1 yani"
+                      src="../assets/artworks/programme-g.png"
+                      class="card-img-top img-vedette"
                     />
-                    <h5 class="col-11 text-end">En savoir plus -></h5>
-                  </div>
+                    <div class="card-body p-1">
+                      <h3>Programme G</h3>
+                      <h4>Par: Yanis Belaid</h4>
+                      <div class="row justify-content-start">
+                        <i class="bi bi-calendar-event col-8 icon-art"
+                          >3 septembre</i
+                        >
+                        <i class="bi bi-clock col-4 icon-art">21h</i>
+
+                        <img
+                          src="../assets/artists/yanis.jpg"
+                          class="col-1 yani"
+                        />
+                        <h5 class="col-11 text-end">En savoir plus -></h5>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-            <div class="col-4">
-              <a href="#" class="card vedettes">
-                <img
-                  src="../assets/artworks/manben-neo.png"
-                  class="card-img-top img-vedette"
-                  id="manben"
-                />
-                <div class="card-body p-1">
-                  <h3>Manben-Neo</h3>
-                  <h4>Par : Naoki Urasawa</h4>
-                  <div class="row justify-content-start">
-                    <i class="bi bi-calendar-event text-end col-1"></i>
-                    <h4 class="col-4">4/9</h4>
-                    <i class="bi bi-clock col-1"></i>
-                    <h4 class="col-4">14h</h4>
-                    <img src="../assets/artists/naoki.jpg" class="col-1 yani" />
-                    <h5 class="col-11 text-end">En savoir plus -></h5>
-                  </div>
+                <div class="swiper-slide">
+                  <a href="artworks.html" class="card vedettes">
+                    <img
+                      src="../assets/artworks/programme-h.png"
+                      class="card-img-top img-vedette"
+                      id="programme-h"
+                    />
+                    <div class="card-body p-1">
+                      <h3>Programme H</h3>
+                      <h4>Par : Kobayashi Yosuke</h4>
+                      <div class="row justify-content-start">
+                        <i class="bi bi-calendar-event col-8 icon-art"
+                          >7 septembre</i
+                        >
+                        <i class="bi bi-clock col-4 icon-art">11h</i>
+                        <img
+                          src="../assets/artists/kobayashi.jpg"
+                          class="col-1 yani"
+                        />
+                        <h5 class="col-11 text-end">En savoir plus -></h5>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-              </a>
+                <div class="swiper-slide">
+                  <a href="artworks.html" class="card vedettes">
+                    <img
+                      src="../assets/artworks/manben-neo.png"
+                      class="card-img-top img-vedette"
+                      id="manben"
+                    />
+                    <div class="card-body p-1">
+                      <h3>Manben-Neo</h3>
+                      <h4>Par : Naoki Urasawa</h4>
+                      <div class="row justify-content-start">
+                        <i class="bi bi-calendar-event col-8 icon-art"
+                          >4 septembre</i
+                        >
+                        <i class="bi bi-clock col-4 icon-art">14h</i>
+                        <img
+                          src="../assets/artists/naoki.jpg"
+                          class="col-1 yani"
+                        />
+                        <h5 class="col-11 text-end">En savoir plus -></h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="artworks.html" class="card vedettes">
+                    <img
+                      src="../assets/artworks/programme-g.png"
+                      class="card-img-top img-vedette"
+                    />
+                    <div class="card-body p-1">
+                      <h3>Programme G</h3>
+                      <h4>Par: Yanis Belaid</h4>
+                      <div class="row justify-content-start">
+                        <i class="bi bi-calendar-event col-8 icon-art"
+                          >3 septembre</i
+                        >
+                        <i class="bi bi-clock col-4 icon-art">21h</i>
+
+                        <img
+                          src="../assets/artists/yanis.jpg"
+                          class="col-1 yani"
+                        />
+                        <h5 class="col-11 text-end">En savoir plus -></h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="artworks.html" class="card vedettes">
+                    <img
+                      src="../assets/artworks/programme-h.png"
+                      class="card-img-top img-vedette"
+                      id="programme-h"
+                    />
+                    <div class="card-body p-1">
+                      <h3>Programme H</h3>
+                      <h4>Par : Kobayashi Yosuke</h4>
+                      <div class="row justify-content-start">
+                        <i class="bi bi-calendar-event col-8 icon-art"
+                          >7 septembre</i
+                        >
+                        <i class="bi bi-clock col-4 icon-art">11h</i>
+                        <img
+                          src="../assets/artists/kobayashi.jpg"
+                          class="col-1 yani"
+                        />
+                        <h5 class="col-11 text-end">En savoir plus -></h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="artworks.html" class="card vedettes">
+                    <img
+                      src="../assets/artworks/manben-neo.png"
+                      class="card-img-top img-vedette"
+                      id="manben"
+                    />
+                    <div class="card-body p-1">
+                      <h3>Manben-Neo</h3>
+                      <h4>Par : Naoki Urasawa</h4>
+                      <div class="row justify-content-start">
+                        <i class="bi bi-calendar-event col-8 icon-art"
+                          >4 septembre</i
+                        >
+                        <i class="bi bi-clock col-4 icon-art">14h</i>
+                        <img
+                          src="../assets/artists/naoki.jpg"
+                          class="col-1 yani"
+                        />
+                        <h5 class="col-11 text-end">En savoir plus -></h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row mt-5">
             <h2>Autres oeuvres et performances</h2>
             <div class="col-12">
-              <a href="#" class="card m-2">
+              <a href="artworks.html" class="card m-2">
                 <img
                   src="../assets/artworks/programme D.png"
                   class="card-img-top img-vedette"
@@ -196,10 +312,10 @@
                   <h3>Programme D</h3>
                   <h4>Par : Guanyu Zhou</h4>
                   <div class="row justify-content-start">
-                    <i class="bi bi-calendar-event text-end col-1"></i>
-                    <h4 class="col-4">5/9</h4>
-                    <i class="bi bi-clock col-1"></i>
-                    <h4 class="col-6">13h</h4>
+                    <i class="bi bi-calendar-event col-8 icon-art"
+                      >5 septembre</i
+                    >
+                    <i class="bi bi-clock col-4 icon-art">13h</i>
                     <img
                       src="../assets/artists/kobayashi.jpg"
                       class="col-1 yanis"
@@ -208,7 +324,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="card m-2">
+              <a href="artworks.html" class="card m-2">
                 <img
                   src="../assets/artworks/doremi.png"
                   class="card-img-top img-vedette"
@@ -218,10 +334,10 @@
                   <h3>Do Ré Mi chasing the world</h3>
                   <h4>Par : Yuki Tsunoda</h4>
                   <div class="row justify-content-start">
-                    <i class="bi bi-calendar-event text-end col-1"></i>
-                    <h4 class="col-4">4/9</h4>
-                    <i class="bi bi-clock col-1"></i>
-                    <h4 class="col-6">16h</h4>
+                    <i class="bi bi-calendar-event col-8 icon-art"
+                      >4 septembre</i
+                    >
+                    <i class="bi bi-clock col-4 icon-art">16h</i>
                     <img
                       src="../assets/artists/naoki.jpg"
                       class="col-1 yanis"
@@ -230,7 +346,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="card m-2">
+              <a href="artworks.html" class="card m-2">
                 <img
                   src="../assets/artworks/world-bubble.png"
                   class="card-img-top img-vedette"
@@ -240,10 +356,10 @@
                   <h3>World bubble</h3>
                   <h4>Par : Haikyu Suzuka</h4>
                   <div class="row justify-content-start">
-                    <i class="bi bi-calendar-event text-end col-1"></i>
-                    <h4 class="col-4">2/9</h4>
-                    <i class="bi bi-clock col-1"></i>
-                    <h4 class="col-6">19h</h4>
+                    <i class="bi bi-calendar-event col-8 icon-art"
+                      >2 septembre</i
+                    >
+                    <i class="bi bi-clock col-4 icon-art">19h</i>
                     <img
                       src="../assets/artists/yanis.jpg"
                       class="col-1 yanis"
@@ -252,7 +368,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="card m-2">
+              <a href="artworks.html" class="card m-2">
                 <img
                   src="../assets/artworks/programme-g.png"
                   class="card-img-top img-vedette"
@@ -262,10 +378,10 @@
                   <h3>Programme G</h3>
                   <h4>Par : Naoki Urasawa</h4>
                   <div class="row justify-content-start">
-                    <i class="bi bi-calendar-event text-end col-1"></i>
-                    <h4 class="col-4">3/9</h4>
-                    <i class="bi bi-clock col-1"></i>
-                    <h4 class="col-6">21h</h4>
+                    <i class="bi bi-calendar-event col-8 icon-art"
+                      >6 septembre</i
+                    >
+                    <i class="bi bi-clock col-4 icon-art">11h</i>
                     <img
                       src="../assets/artists/naoki.jpg"
                       class="col-1 yanis"
@@ -274,7 +390,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="card m-2">
+              <a href="artworks.html" class="card m-2">
                 <img
                   src="../assets/artworks/programme-h.png"
                   class="card-img-top img-vedette"
@@ -284,10 +400,10 @@
                   <h3>Programme H</h3>
                   <h4>Par : Naoki Urasawa</h4>
                   <div class="row justify-content-start">
-                    <i class="bi bi-calendar-event text-end col-1"></i>
-                    <h4 class="col-4">7/9</h4>
-                    <i class="bi bi-clock col-1"></i>
-                    <h4 class="col-6">11h</h4>
+                    <i class="bi bi-calendar-event col-8 icon-art"
+                      >7 septembre</i
+                    >
+                    <i class="bi bi-clock col-4 icon-art">13h</i>
                     <img
                       src="../assets/artists/kobayashi.jpg"
                       class="col-1 yanis"
@@ -296,7 +412,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#" class="card m-2">
+              <a href="artworks.html" class="card m-2">
                 <img
                   src="../assets/artworks/manben-neo.png"
                   class="card-img-top img-vedette"
@@ -306,10 +422,10 @@
                   <h3>Manben-Neo</h3>
                   <h4>Par : Naoki Urasawa</h4>
                   <div class="row justify-content-start">
-                    <i class="bi bi-calendar-event text-end col-1"></i>
-                    <h4 class="col-4">4/9</h4>
-                    <i class="bi bi-clock col-1"></i>
-                    <h4 class="col-6">14h</h4>
+                    <i class="bi bi-calendar-event col-8 icon-art"
+                      >5 septembre</i
+                    >
+                    <i class="bi bi-clock col-4 icon-art">15h</i>
                     <img
                       src="../assets/artists/yanis.jpg"
                       class="col-1 yanis"
@@ -338,11 +454,13 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
