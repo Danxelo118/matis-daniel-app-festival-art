@@ -11,7 +11,7 @@
   --noir: black;
 }
 
-.header {
+header {
   margin-bottom: 20px;
 }
 
@@ -43,21 +43,27 @@ footer {
   height: 100%;
 }
 
+
+a.github-link:hover {
+  color: var(--rouge);
+}
+
+
 .logo-footer {
   width: auto;
 }
 
-.main {
+main {
   padding-top: 50px;
   background-color: white;
   color: var(--gris-fonce);
 }
 
-.main h1 {
+main h1 {
   font-size: 40px;
 }
 
-.main p {
+main p {
   font-size: 30px;
   color: black;
 }
