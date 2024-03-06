@@ -22,3 +22,27 @@ const swiperVedettes = new Swiper(".swiper-featured-artworks", {
   slidesPerView: "2.2",
   spaceBetween: 1,
 });
+
+
+var swiperScreenshots = new Swiper('.swiper-screenshots', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  slidesPerView: 'auto',
+  spaceBetween: 10,
+});
+
+var swiper = new Swiper('.swiper-screenshots', {
+  slidesPerView: 1, 
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3, 
+    }
+  }
+});
