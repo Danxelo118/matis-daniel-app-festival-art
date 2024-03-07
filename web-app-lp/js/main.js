@@ -24,25 +24,20 @@ const swiperVedettes = new Swiper(".swiper-featured-artworks", {
 });
 
 
-var swiperScreenshots = new Swiper('.swiper-screenshots', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  slidesPerView: 'auto',
-  spaceBetween: 10,
-});
 
-var swiper = new Swiper('.swiper-screenshots', {
-  slidesPerView: 1, 
-  spaceBetween: 10,
+var swiperScreenshots = new Swiper('.swiper-screenshots', {
+  loop: true, 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next', 
+    prevEl: '.swiper-button-prev', 
   },
   breakpoints: {
+   
     1200: {
-      slidesPerView: 3, 
-    }
-  }
+      slidesPerView: 3,
+    },
+  },
+  centeredSlides: true, 
+  slidesPerView: 1, 
+
 });

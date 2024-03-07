@@ -9,29 +9,29 @@
   --roboto: "roboto";
   --bebas: "Bebas Neue";
   --noir: black;
-}
+};
 
 header {
   margin-bottom: 20px;
-}
+};
 
 .navbar {
   background-color: white;
   height: auto;
-}
+};
 
 .logo {
   width: 10%;
-}
+};
 
 .navbar-toggler {
   border: white;
-}
+};
 
 .navbar-brand {
   font-weight: 700;
   font-family: var(--roboto);
-}
+};
 
 
 footer {
@@ -40,25 +40,21 @@ footer {
   font-size: small;
   bottom: 0;
   width: 100%;
-}
-
-
-
-
+};
 
 main {
   background-color: white;
   color: var(--gris-fonce);
-}
+};
 
 main h1 {
   font-size: 40px;
-}
+};
 
 main p {
   font-size: 30px;
   color: black;
-}
+};
 
 
 .phone-frame {
@@ -69,26 +65,26 @@ main p {
   border-radius: 10%;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65);
   overflow: hidden;
-}
+};
 
 .phone-frame iframe {
   width: 100%;
   border: none;
 
-}
+};
 
 
 .btn {
   border: 2px solid var(--rouge);
   background-color: var(--rouge);
   color: white;
-}
+};
 
 .btn:hover {
   background-color: white;
   color: var(--rouge);
   border: 2px solid var(--rouge);
-}
+};
 
 .card-body {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.65);
@@ -96,19 +92,19 @@ main p {
   transition: all 0.3s ease;
   padding: 20px;
   border-radius: 10px;
-}
+};
 
 .card-body:hover {
   box-shadow: 2px 2px 8px rgba(0.95, 0.95, 0.95, 0.95);
   transform: translateY(-5px);
-}
+};
 
 .card-body h5 {
   font-size: 1.25rem;
   text-align: center;
   background-color: var(--rouge);
   color: var(--noir);
-}
+};
 
 .card-body p.card-texte {
   font-size: 0.90rem;
@@ -116,71 +112,71 @@ main p {
   margin-top: 30px;
   line-height: 1.8;
   text-align: center;
-}
+};
 
 
 .bi {
   font-size: 1.5rem;
   margin-bottom: 20px;
 
-}
+};
 
 h2,
 p {
   text-align: center;
-}
+};
 
 h2 {
   font-weight: bold;
   font-size: 30px;
-}
+};
 
 
 .section-features p {
   font-size: 1rem;
-}
+};
 
 .section-testimonals .card {
   padding: 20px;
   height: 100%;
   margin-bottom: 20px;
   position: relative;
-}
+};
 
 
 .section-testimonals h2 {
   font-weight: bold;
   font-size: 30px;
-}
+};
 
 .section-testimonals h8 {
   font-size: 1.25rem;
   text-align: center;
-}
+};
 
 .section-testimonals p {
   font-size: 15px;
-}
+};
 
 .personnes img {
   height: 20vh;
   object-fit: cover;
   object-position: 20%;
-}
+};
 
 #Infolettre .col-md-12 {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.7);
-}
+};
 
 #Infolettre p {
   font-size: 1rem;
   color: var(--noir);
-}
+};
 
 #Infolettre h2 {
   color: var(--noir);
-}
+};
 
 #Infolettre {
   background-image: url("https://images.unsplash.com/photo-1553526089-949e202de655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -190,15 +186,26 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+};
 
-.swiper-screenshots {
+.swiper-screenshots img {
   border: 2px solid #333;
-}
+  border-radius: 10px;
+  max-width: 100%;
+};
+
 
 .swiper-slide img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-}
+};
 
+.swiper-screenshots .swiper-slide {
+  position: relative;
+};
 
+.swiper-screenshots .swiper-slide-prev,
+.swiper-screenshots .swiper-slide-next {
+  opacity: 0.5; /* Opacité réduite */
+  transition: opacity 0.3s ease; /* Transition fluide */
+};
