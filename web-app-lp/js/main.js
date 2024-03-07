@@ -25,7 +25,7 @@ const swiperVedettes = new Swiper(".swiper-featured-artworks", {
 
 
 
-var swiperScreenshots = new Swiper('.swiper-screenshots', {
+const swiperScreenshots = new Swiper('.swiper-screenshots', {
   loop: true, 
   navigation: {
     nextEl: '.swiper-button-next', 
