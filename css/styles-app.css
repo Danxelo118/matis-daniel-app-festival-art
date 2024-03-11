@@ -14,10 +14,6 @@ h1 {
   font-size: 120%;
 }
 
-.navbar {
-  height: 10vh;
-}
-
 .navbar-toggler {
   border: white;
 }
@@ -40,7 +36,7 @@ footer {
 }
 
 .logo-footer {
-  width: auto;
+  width: 100px;
 }
 
 main {
@@ -59,6 +55,12 @@ main {
 .search-bar:focus {
   box-shadow: 0 0 10px #ff5d73;
   border: 2px solid var(--rouge);
+}
+
+.loupe {
+  border: 2px solid var(--rouge);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .btn {
@@ -98,9 +100,12 @@ main {
   position: relative;
 }
 
+.card {
+  text-decoration: none;
+}
+
 .card:hover {
-  top: -2%;
-  box-shadow: 0 0 10px var(--gris-pale);
+  box-shadow: 0 0 10px var(--rouge);
 }
 
 #vedette {
