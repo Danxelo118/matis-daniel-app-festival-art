@@ -1,6 +1,6 @@
 # Japan Art Media Festival
 
-Optimisation Web - Projet app d'un festival d'art nimérique
+Optimisation Web - Projet app d'un festival d'art numérique
 
 ## Équipe
 
