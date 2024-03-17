@@ -215,3 +215,7 @@ h2 {
   transition: opacity 0.3s ease;
 }
 
+.swiper-button-prev, 
+.swiper-button-next {
+  fill: var(--rouge);
+}
