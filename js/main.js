@@ -37,4 +37,4 @@ const swiperScreenshots = new Swiper(".swiper-screenshots", {
   centeredSlides: true,
   slidesPerView: 1, 
 });
-/*updated*/
+
